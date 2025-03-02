@@ -1,0 +1,57 @@
+// *
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+// container
+
+.container {
+  max-width: 1310px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0px 30px;
+}
+
+// ol ul
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+// btn
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+// input
+
+input {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+// textarea
+
+textarea {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+// a
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}

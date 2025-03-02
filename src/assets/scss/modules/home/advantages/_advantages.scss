@@ -1,0 +1,75 @@
+.advantages {
+  .advantages__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 79px;
+
+    &-arhive {
+      width: 85px;
+      padding: 8px;
+      color: $purple-violet;
+      font-family: $sen;
+      font-weight: 400;
+      font-size: 16px;
+      letter-spacing: 2px;
+      text-align: center;
+      border: 1px solid $purple-violet;
+      border-radius: 4px;
+      cursor: pointer;
+  
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 43px 0;
+    margin-top: 48px;
+    li {
+      width: 540px;
+      height: 230px;
+      background: $light-blue;
+      border-radius: 5px;
+      padding: 31px;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 7px;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        border-radius: 50%;
+        background: $purple-violet;
+        color: $white;
+        padding: 10px;
+      }
+
+      h3 {
+        font-family: $sen;
+        font-weight: 700;
+        font-size: 33px;
+        line-height: 64px;
+        letter-spacing: 2px;
+        color: $black;
+      }
+
+      p {
+        width: 520px;
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        color: $gray;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.contacts__hero {
+    margin-top: 150px;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 560px;
+      height: 560px;
+      object-fit: contain;
+      transform: scale(1.9);
+    }
+
+    &-content {
+      display: flex;
+      align-items: end;
+      flex-direction: column;
+      gap: 28px;
+
+      h2 {
+        font-family: $sen;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: 2px;
+        text-align: right;
+        color: $black;
+      }
+
+      h3 {
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        color: $gray2;
+
+        span {
+          font-family: $inter;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          letter-spacing: 0px;
+          color: $purple-violet;
+        }
+      }
+      p {
+        width: 680px;
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        color: #a0a0a0;
+        text-align: end;
+      }
+    }
+  }
+}

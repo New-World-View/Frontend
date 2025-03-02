@@ -1,0 +1,69 @@
+.hero {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100svh;
+  background: radial-gradient(
+      30.56% 76.04% at 74.58% 0%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("/src/assets/images/hero.png") no-repeat center;
+  background-size: cover;
+
+  .hero__wrapper {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+
+    h2 {
+      font-family: $inter;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 3px;
+      color: $white;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: $sen;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 64px;
+      letter-spacing: -2px;
+      color: $white;
+      margin: 9px 0;
+      padding: 0;
+    }
+
+    h3 {
+      font-family: $inter;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0px;
+      color: $white;
+
+      span {
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        color: $purple-violet;
+      }
+    }
+
+    p {
+      width: 680px;
+      font-family: $inter;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0px;
+      color: #a0a0a0;
+    }
+  }
+}
