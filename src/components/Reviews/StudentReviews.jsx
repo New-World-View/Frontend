@@ -46,7 +46,7 @@ export const StudentReviews = () => {
           <ul>
             {data.map((review) => (
               <ReviewCard
-                id={review.id}
+                key={review.id}
                 studantName={review.username}
                 message={review.message}
               />
