@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { TeachersCard } from "../../components/TeachersCard";
 import { SectionTitle } from "../../ui/SectionTitle";
 import api from "../../utils/axiosInstance";
@@ -12,6 +14,10 @@ export const TeachersHome = () => {
   const [totalCount, setTotalCount] = useState(0);
   const [page, setPage] = useState(1);
   const pageSize = 3;
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   useEffect(() => {
     setLoading(true);
@@ -30,9 +36,9 @@ export const TeachersHome = () => {
   }, [page]);
 
   return (
-    <section className="teachers__home">
+    <section className="teachers__home" data-aos="fade-up">
       <div className="container">
-        <SectionTitle title="Учителя" />
+        <SectionTitle title="Учителя" data-aos="fade-right" />
         <ul>
           {loading ? (
             <center>
@@ -50,6 +56,7 @@ export const TeachersHome = () => {
                 fullName={teacher.username}
                 subject={teacher.profession}
                 description={teacher.description}
+                data-aos="zoom-in"
               />
             ))
           ) : (
@@ -63,6 +70,7 @@ export const TeachersHome = () => {
           setPage={setPage}
           totalCount={totalCount}
           pageSize={pageSize}
+          data-aos="fade-up"
         />
       </div>
     </section>
