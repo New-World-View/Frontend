@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-export const SectionTitle = ({title}) => {
-  return (
-    <h2 className='title'>{title}</h2>
-  )
-}
+export const SectionTitle = ({ title }) => {
+  return <h2 className="title">{title}</h2>;
+};
