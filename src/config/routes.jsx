@@ -3,6 +3,7 @@ import { Home } from "../modules/Home/Home";
 import { Courses } from "../modules/Courses/Courses";
 import About from "../modules/About/About";
 import Contacts from "../modules/Contacts/Contacts";
+import { PageOfCource } from "../modules/Courses/PageOfCource";
 
 export const routes = () => {
   return [
@@ -13,7 +14,7 @@ export const routes = () => {
     },
     {
       id: 2,
-      path: "/courses",
+      path: "/courses/*",
       element: <Courses />,
     },
     {
@@ -25,6 +26,11 @@ export const routes = () => {
       id: 4,
       path: "/contacts",
       element: <Contacts />,
+    },
+    {
+      id: 5,
+      path: "/courses/info/:id",
+      element: <PageOfCource />,
     },
   ];
 };
