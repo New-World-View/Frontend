@@ -42,7 +42,7 @@ export const Footer = () => {
             Курманжан Датка 547 <br /> © Copylight 2025 New World View
           </h2>
 
-          <ul >
+          <ul>
             <li>
               <FaTelegramPlane />
             </li>

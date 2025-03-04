@@ -18,10 +18,25 @@ export const Btn = ({ text, onClick, disabled }) => {
         alignItems: "center",
         justifyContent: "center",
         textTransform: "none",
+        transition: "all 0.3s ease",
+
+        // Media query for devices below 640px
+        "@media (max-width: 640px)": {
+          width: "160px",
+          height: "50px",
+          fontSize: "16px",
+        },
+
+        // Media query for devices below 320px
+        "@media (max-width: 320px)": {
+          width: "120px",
+          height: "45px",
+          fontSize: "14px",
+        },
       }}
       onClick={onClick}
       disabled={disabled}
-      type="submit"  // Ensure button is for form submission
+      type="submit"
     >
       {text}
     </Button>

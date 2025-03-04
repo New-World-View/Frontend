@@ -13,7 +13,7 @@ export const TeachersHome = () => {
   const [error, setError] = useState(null);
   const [totalCount, setTotalCount] = useState(0);
   const [page, setPage] = useState(1);
-  const [pageSize, setPageSize] = useState(3);  
+  const [pageSize, setPageSize] = useState(3);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -22,9 +22,11 @@ export const TeachersHome = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 870) {
-        setPageSize(3); 
+        setPageSize(3);
+      } else if (window.innerWidth >= 630) {
+        setPageSize(2);
       } else {
-        setPageSize(4);  
+        setPageSize(1);
       }
     };
 
@@ -36,10 +38,11 @@ export const TeachersHome = () => {
     };
   }, []);
 
+
   useEffect(() => {
     setLoading(true);
     api
-      .get(`/teachers/?page=${page}&page_size=${pageSize}`)  
+      .get(`/teachers/?page=${page}&page_size=${pageSize}`)
       .then((res) => {
         console.log("API Response:", res.data);
         setData(res.data.results);
@@ -50,7 +53,7 @@ export const TeachersHome = () => {
         setError(error.message);
         setLoading(false);
       });
-  }, [page, pageSize]);  
+  }, [page, pageSize]);
 
   return (
     <section className="teachers__home" data-aos="fade-up">
