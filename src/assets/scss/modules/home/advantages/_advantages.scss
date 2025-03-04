@@ -25,9 +25,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 43px 0;
+    gap: 43px;
     margin-top: 80px;
+
+    @media (max-width: 1160px) {
+      gap: 23px;
+    }
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+    }
+
     li {
       width: 540px;
       height: 230px;
@@ -38,6 +46,27 @@
       align-items: start;
       flex-direction: column;
       gap: 7px;
+
+      @media (max-width: 1285px) {
+        width: 480px;
+      }
+
+      @media (max-width: 1160px) {
+        width: 430px;
+      }
+
+      @media (max-width: 1000px) {
+        width: 380px;
+      }
+
+      @media (max-width: 940px) {
+        width: 350px;
+      }
+
+      @media (max-width: 900px) {
+        width: 80%;
+        margin: 0 auto;
+      }
 
       .icon {
         display: flex;
@@ -55,7 +84,7 @@
           height: 25px;
           object-fit: cover;
           mix-blend-mode: lighten;
-          filter: brightness(200%) contrast(200%); 
+          filter: brightness(200%) contrast(200%);
         }
       }
 
@@ -76,6 +105,24 @@
         line-height: 28px;
         letter-spacing: 0px;
         color: $gray;
+
+        @media (max-width: 1160px) {
+          width: 400px;
+        }
+
+        @media (max-width: 960px) {
+          width: 370px;
+          max-height: 112px;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        @media (max-width: 900px) {
+          width: 90%;
+        }
       }
     }
   }

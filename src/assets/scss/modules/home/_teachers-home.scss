@@ -9,5 +9,22 @@
     justify-content: start;
     gap: 100px;
     margin-top: 80px;
+
+    @media (max-width: 1050px) {
+      gap: 30px;
+    }
+
+    @media (max-width: 870px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+
+    @media (max-width: 800px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+    }
   }
 }

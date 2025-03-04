@@ -13,7 +13,7 @@ export const Map = () => {
     <section className="map">
       <div className="container">
         <div data-aos="fade-down">
-          <SectionTitle title="Наши контакты" />
+          <SectionTitle title="Наши адрес" />
         </div>
         <div className="map__wrapper">
           <iframe
