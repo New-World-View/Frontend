@@ -1,15 +1,17 @@
 .courses__hero {
-    margin-top: 150px;
+  margin-top: 150px;
 
   &-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 
     img {
       width: 560px;
       height: 560px;
       object-fit: contain;
+      transition: width 0.3s, height 0.3s;
     }
 
     &-content {
@@ -26,6 +28,7 @@
         letter-spacing: 2px;
         text-align: right;
         color: $black;
+        transition: font-size 0.3s, line-height 0.3s;
       }
 
       h3 {
@@ -33,27 +36,163 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
-        letter-spacing: 0px;
         color: $gray2;
 
         span {
-          font-family: $inter;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 28px;
-          letter-spacing: 0px;
           color: $purple-violet;
         }
       }
+
       p {
         width: 680px;
         font-family: $inter;
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
-        letter-spacing: 0px;
         color: #a0a0a0;
         text-align: end;
+        transition: width 0.3s, font-size 0.3s, line-height 0.3s;
+      }
+    }
+  }
+
+  /* 1340px gacha */
+  @media (max-width: 1340px) {
+    .courses__hero {
+      &-wrapper {
+        gap: 40px;
+
+        img {
+          width: 500px;
+          height: 500px;
+        }
+
+        &-content p {
+          width: 600px;
+        }
+      }
+    }
+  }
+
+  /* 1024px gacha */
+  @media (max-width: 1190px) {
+    .courses__hero {
+      margin-top: 100px;
+
+      &-wrapper {
+        img {
+          width: 450px;
+          height: 450px;
+        }
+
+        &-content p {
+          width: 500px;
+        }
+      }
+    }
+  }
+
+  /* 768px gacha */
+  @media (max-width: 1050px) {
+    .courses__hero {
+      &-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        img {
+          width: 80%;
+          max-width: 400px;
+          height: auto;
+        }
+
+        &-content {
+          align-items: center;
+          text-align: center;
+
+          h2 {
+            font-size: 42px;
+            line-height: 50px;
+            text-align: center;
+          }
+
+          h3 {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+          }
+
+          p {
+            width: 90%;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  /* 480px gacha */
+  @media (max-width: 480px) {
+    .courses__hero {
+      &-wrapper {
+        gap: 20px;
+
+        img {
+          width: 100%;
+          max-width: 300px;
+        }
+
+        &-content {
+          gap: 20px;
+
+          h2 {
+            font-size: 32px;
+            line-height: 40px;
+          }
+
+          h3 {
+            font-size: 12px;
+          }
+
+          p {
+            width: 100%;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  /* 320px gacha */
+  @media (max-width: 320px) {
+    .courses__hero {
+      &-wrapper {
+        gap: 16px;
+
+        img {
+          max-width: 250px;
+        }
+
+        &-content {
+          gap: 16px;
+
+          h2 {
+            font-size: 24px;
+            line-height: 30px;
+          }
+
+          h3 {
+            font-size: 10px;
+            line-height: 16px;
+          }
+
+          p {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
       }
     }
   }
