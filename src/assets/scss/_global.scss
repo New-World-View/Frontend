@@ -2,6 +2,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// Body va HTML uchun overflow-x: hidden;
+html, body {
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -9,7 +19,6 @@ body::-webkit-scrollbar {
 }
 
 // container
-
 .container {
   max-width: 1310px;
   width: 100%;
@@ -19,7 +28,6 @@ body::-webkit-scrollbar {
 }
 
 // ol ul
-
 ul,
 ol,
 li {
@@ -27,14 +35,12 @@ li {
 }
 
 // btn
-
 button {
   border: none;
   cursor: pointer;
 }
 
 // input
-
 input {
   margin: 0;
   padding: 0;
@@ -42,7 +48,6 @@ input {
 }
 
 // textarea
-
 textarea {
   margin: 0;
   padding: 0;
@@ -50,7 +55,6 @@ textarea {
 }
 
 // a
-
 a {
   text-decoration: none;
   cursor: pointer;
