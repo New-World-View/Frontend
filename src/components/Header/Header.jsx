@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom"; 
+import { useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HeaderItem from "../Header/HeaderItem";
@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const location = useLocation(); 
+  const location = useLocation();
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -31,8 +31,14 @@ export default function Header() {
   }, []);
 
   const toggleMobileMenu = (event) => {
-    event.stopPropagation(); 
+    event.stopPropagation();
     setMobileMenuOpen((prev) => !prev);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
   };
 
   return (
@@ -40,11 +46,11 @@ export default function Header() {
       <div className="container">
         <div className="header_wrapper">
           <NavLink to="/">
-            <h2>NWV</h2>
+            <h2 onClick={scrollToTop}>NWV</h2>
           </NavLink>
 
-          <div 
-            className={`burger ${isMobileMenuOpen ? "open" : ""}`} 
+          <div
+            className={`burger ${isMobileMenuOpen ? "open" : ""}`}
             onClick={toggleMobileMenu}
           >
             <span></span>
