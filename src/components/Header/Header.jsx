@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom"; 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HeaderItem from "../Header/HeaderItem";
@@ -6,12 +7,31 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation(); 
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
 
-  const toggleMobileMenu = () => {
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".header_wrapper")) {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
+  const toggleMobileMenu = (event) => {
+    event.stopPropagation(); 
     setMobileMenuOpen((prev) => !prev);
   };
 
