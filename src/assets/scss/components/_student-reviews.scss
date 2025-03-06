@@ -5,24 +5,26 @@
     justify-content: start;
     gap: 100px;
     margin: 50px 0;
+    flex-wrap: wrap;
+
     .review-card {
       display: flex;
       align-items: start;
       flex-direction: column;
       justify-content: center;
-      gap: 30px;
-      width: 370px;
-      height: 203px;
+      gap: 20px;
+      width: 320px;
+      height: 180px;
       border-radius: 5px;
       background: $light-blue;
-      padding: 17px 23px;
+      padding: 15px 20px;
 
       p {
-        height: 100px;
+        height: 90px;
         font-family: $inter;
         font-weight: 400;
-        font-size: 15px;
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 22px;
         letter-spacing: 0px;
         color: $blue-gray;
       }
@@ -37,10 +39,91 @@
       h3 {
         font-family: $sen;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 20px;
         letter-spacing: 0%;
         color: $blue-gray;
       }
     }
   }
+
+  @media (max-width: 1340px) {
+    ul {
+      gap: 50px;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    ul {
+      overflow-x: auto !important;
+      flex-wrap: nowrap;
+      justify-content: start;
+      gap: 15px;
+      padding-bottom: 10px;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      white-space: nowrap;
+      width: 100%;
+    }
+  
+    ul::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .review-card {
+      width: 260px; 
+      height: 150px;
+      padding: 10px 12px;
+      flex-shrink: 0; 
+
+      p {
+        width: 90% !important;
+        max-height: 90px;
+        overflow: hidden; 
+        display: -webkit-box;
+        -webkit-line-clamp: 4; 
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis; 
+        white-space: normal;
+      }
+      hr {
+        width: 100%;
+        height: 1px;
+        background: $purple-violet;
+        border: none;
+      }
+
+      h3 {
+        font-family: $sen;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0%;
+        color: $blue-gray;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    ul {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      justify-content: start;
+      gap: 15px;
+      padding-bottom: 10px;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      white-space: nowrap;
+    }
+  
+    ul::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .review-card {
+      width: 260px;
+      height: 150px;
+      padding: 10px 12px;
+    }
+  }
+  
 }

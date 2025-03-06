@@ -19,7 +19,7 @@ export const AboutHero = () => {
             data-aos="fade-left" 
           />
           <div 
-            className="courses__hero-wrapper-content" 
+            className="about__hero-wrapper-content" 
             data-aos="fade-right"
           >
             <h2>

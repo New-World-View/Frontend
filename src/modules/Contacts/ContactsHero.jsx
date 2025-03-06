@@ -19,7 +19,7 @@ export const ContactsHero = () => {
             data-aos="fade-left" 
           />
           <div 
-            className="courses__hero-wrapper-content" 
+            className="contacts__hero-wrapper-content" 
             data-aos="fade-right"
           >
             <h2>

@@ -58,4 +58,145 @@
       }
     }
   }
+
+  /* 1340px gacha */
+  @media (max-width: 1340px) {
+    .contacts__hero {
+      &-wrapper {
+        gap: 40px;
+
+        img {
+          width: 500px;
+          height: 500px;
+        }
+
+        &-content p {
+          width: 600px;
+        }
+      }
+    }
+  }
+
+  /* 1024px gacha */
+  @media (max-width: 1190px) {
+    .contacts__hero {
+      margin-top: 100px;
+
+      &-wrapper {
+        img {
+          width: 450px;
+          height: 450px;
+        }
+
+        &-content p {
+          width: 500px;
+        }
+      }
+    }
+  }
+
+  /* 768px gacha */
+  @media (max-width: 1050px) {
+    .contacts__hero {
+      &-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        img {
+          width: 80%;
+          max-width: 400px;
+          height: auto;
+        }
+
+        &-content {
+          align-items: center;
+          text-align: center;
+
+          h2 {
+            font-size: 42px;
+            line-height: 50px;
+            text-align: center;
+          }
+
+          h3 {
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+          }
+
+          p {
+            width: 90%;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  /* 480px gacha */
+  @media (max-width: 480px) {
+    .contacts__hero {
+      &-wrapper {
+        gap: 20px;
+
+        img {
+          width: 100%;
+          max-width: 300px;
+        }
+
+        &-content {
+          gap: 20px;
+
+          h2 {
+            font-size: 32px;
+            line-height: 40px;
+          }
+
+          h3 {
+            font-size: 12px;
+          }
+
+          p {
+            width: 100%;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  /* 320px gacha */
+  @media (max-width: 320px) {
+    .contacts__hero {
+      &-wrapper {
+        gap: 16px;
+
+        img {
+          max-width: 250px;
+        }
+
+        &-content {
+          gap: 16px;
+
+          h2 {
+            font-size: 24px;
+            line-height: 30px;
+          }
+
+          h3 {
+            font-size: 10px;
+            line-height: 16px;
+          }
+
+          p {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
 }
