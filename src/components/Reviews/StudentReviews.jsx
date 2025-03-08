@@ -58,12 +58,14 @@ export const StudentReviews = () => {
           </center>
         )}
 
-        <PaginationComponent
-          page={page}
-          setPage={setPage}
-          totalCount={totalCount}
-          pageSize={pageSize}
-        />
+        <div className="about__pagination">
+          <PaginationComponent
+            page={page}
+            setPage={setPage}
+            totalCount={totalCount}
+            pageSize={pageSize}
+          />
+        </div>
       </div>
     </section>
   );

@@ -1,4 +1,9 @@
 .reviews {
+  position: relative;
+  .about__pagination {
+    width: auto;
+    height: 80px;
+  }
   ul {
     display: flex;
     align-items: center;
@@ -65,25 +70,25 @@
       white-space: nowrap;
       width: 100%;
     }
-  
+
     ul::-webkit-scrollbar {
       display: none;
     }
-  
+
     .review-card {
-      width: 260px; 
+      width: 260px;
       height: 150px;
       padding: 10px 12px;
-      flex-shrink: 0; 
+      flex-shrink: 0;
 
       p {
         width: 90% !important;
         max-height: 90px;
-        overflow: hidden; 
+        overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 4; 
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
-        text-overflow: ellipsis; 
+        text-overflow: ellipsis;
         white-space: normal;
       }
       hr {
@@ -102,7 +107,7 @@
       }
     }
   }
-  
+
   @media (max-width: 480px) {
     ul {
       overflow-x: auto;
@@ -114,16 +119,15 @@
       -ms-overflow-style: none;
       white-space: nowrap;
     }
-  
+
     ul::-webkit-scrollbar {
       display: none;
     }
-  
+
     .review-card {
       width: 260px;
       height: 150px;
       padding: 10px 12px;
     }
   }
-  
 }
