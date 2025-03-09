@@ -42,18 +42,42 @@ export const Footer = () => {
             Курманжан Датка 547 <br /> © Copylight 2025 New World View
           </h2>
 
-          <ul>
+          <ul className="flex space-x-4">
             <li>
-              <FaTelegramPlane />
+              <a
+                href="https://t.me/nwv_education"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTelegramPlane className="text-blue-500 text-2xl" />
+              </a>
             </li>
             <li>
-              <BsWhatsapp />
+              <a
+                href="https://wa.me/+996555102001"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BsWhatsapp className="text-green-500 text-2xl" />
+              </a>
             </li>
             <li>
-              <FaInstagram />
+              <a
+                href="https://www.instagram.com/nwv.education/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram className="text-pink-500 text-2xl" />
+              </a>
             </li>
             <li>
-              <AiOutlineTikTok />
+              <a
+                href="https://www.tiktok.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiOutlineTikTok className="text-black text-2xl" />
+              </a>
             </li>
           </ul>
         </div>

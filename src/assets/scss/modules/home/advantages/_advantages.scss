@@ -25,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 43px;
+    gap: 51px;
     margin-top: 80px;
 
     @media (max-width: 1160px) {
@@ -37,7 +37,7 @@
     }
 
     li {
-      width: 540px;
+      width: 90%;
       height: 230px;
       background: $light-blue;
       border-radius: 5px;
@@ -47,24 +47,18 @@
       flex-direction: column;
       gap: 7px;
 
-      @media (max-width: 1285px) {
-        width: 480px;
-      }
 
-      @media (max-width: 1160px) {
-        width: 430px;
-      }
 
-      @media (max-width: 1000px) {
-        width: 380px;
+      @media (max-width: 1270px) {
+        width: 45% !important;
       }
 
       @media (max-width: 940px) {
         width: 350px;
       }
 
-      @media (max-width: 900px) {
-        width: 80%;
+      @media (max-width: 900px) { 
+        width: 90%;
         margin: 0 auto;
       }
 

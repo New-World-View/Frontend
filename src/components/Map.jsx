@@ -33,7 +33,7 @@ export const Map = () => {
               Ориентир: напротив Business House Osh
             </p>
             <div data-aos="zoom-in">
-              <Btn text="+996 505 00 44 11" />
+              <Btn text="+996 555 10 20 01" />
             </div>
           </div>
         </div>

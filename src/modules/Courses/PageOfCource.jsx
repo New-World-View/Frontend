@@ -97,7 +97,7 @@ export const PageOfCource = () => {
                 Курманжан Датка 547 <br />
                 Ориентир: напротив Business House Osh
               </h4>
-              <Btn text="+996 505 00 44 11" />
+              <Btn text="+996 555 10 20 01" />
             </div>
             <img src={Photo} alt="Photo" data-aos="zoom-in" />
           </div>
